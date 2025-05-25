@@ -15,8 +15,8 @@ const ProductList = ({ searchQuery }) => {
     try {
       setLoading(true);
       const url = searchQuery?.trim()
-        ? `http://localhost:5000/api/products/search?q=${encodeURIComponent(searchQuery)}`
-        : `http://localhost:5000/api/products`;
+        ? `https://shoplive-assesment-1.onrender.com/api/products/search?q=${encodeURIComponent(searchQuery)}`
+        : `https://shoplive-assesment-1.onrender.com/api/products`;
 
       const response = await axios.get(url);
       setProducts(response.data);

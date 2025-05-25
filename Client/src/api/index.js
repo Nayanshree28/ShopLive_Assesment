@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const api = axios.create({
-  baseURL: 'http://localhost:5000/api',   // back-end URL
+  baseURL: 'https://shoplive-assesment-1.onrender.com',   // back-end URL
 });
 
 // Global error handling
