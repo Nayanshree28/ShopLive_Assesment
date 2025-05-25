@@ -45,7 +45,7 @@ export function useProductsSocket(onChange) {
     const connectSocket = () => {
       if (socketRef.current?.connected) return;
 
-      const socket = io('http://localhost:5000', {
+      const socket = io('https://shoplive-assesment-1.onrender.com', {
         reconnection: false // We'll handle reconnection manually
       });
 

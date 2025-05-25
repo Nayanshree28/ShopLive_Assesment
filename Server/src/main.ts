@@ -7,7 +7,7 @@ async function bootstrap() {
   
   // Enhanced CORS configuration
   app.enableCors({
-    origin: process.env.CLIENT_ORIGIN || 'https://shop-live-assesment.vercel.app/',
+    origin: process.env.CLIENT_ORIGIN || 'https://shop-live-assesment.vercel.app',
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization', 'Accept'],
     credentials: true,
