@@ -74,7 +74,7 @@ const CreateProduct = () => {
 
     setLoading(true);
     try {
-      await axios.post('/products', {
+      await axios.post('https://shoplive-assesment-1.onrender.com/api/products', {
         ...formData,
         price: parseFloat(formData.price),
       });
