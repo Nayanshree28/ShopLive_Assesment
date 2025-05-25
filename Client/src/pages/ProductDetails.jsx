@@ -19,7 +19,7 @@ const ProductDetails = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await axios.get(`/products/${id}`);
+        const response = await axios.get(`https://shoplive-assesment-1.onrender.com/api/products/${id}`);
         setProduct(response.data);
         setError(null);
       } catch (err) {
